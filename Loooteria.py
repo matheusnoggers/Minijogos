@@ -1,6 +1,6 @@
-import random
+import random as rd
 
-variavel=[random.randint(0,60), random.randint(0,60), random.randint(0,60), random.randint(0,60), random.randint(0,60), random.randint(0,60)]
+variavel=[num=rd.randint(1, 60) for num in range(6)]
 
 print("Insira os numeros da sua aposta: ")
 global aposta
@@ -23,4 +23,5 @@ else:
     print("Voce errou! =(")
 
 print("Sua aposta: ", aposta)
+
 print("Numeros da loteria: ", variavel)
